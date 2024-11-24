@@ -311,6 +311,7 @@ button {
 .about__inner {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
 }
 
 .about__heading,
@@ -360,4 +361,74 @@ button {
 	top: 2px;
 	left: 5px;
 	content: url(../icons/check.svg);
+}
+
+.about__media-top {
+	position: relative;
+	margin-left: auto;
+}
+
+.about__card {
+	position: absolute;
+	width: 136px;
+	height: auto;
+	top: 157px;
+	left: -92px;
+	padding: 30px 26px;
+	text-align: center;
+	border-radius: 10px;
+	background: #5bd6e2;
+	box-shadow: -15px 26px 48px 0px rgba(85, 240, 255, 0.17);
+}
+
+.about__card-title {
+	color: #fff;
+	font-family: Sora;
+	font-size: 4.2rem;
+	font-weight: 700;
+	line-height: 1;
+}
+
+.about__card-year {
+	margin-top: 14px;
+	color: #c6f4f9;
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 1.42;
+}
+
+.about__card-icon {
+	position: absolute;
+	top: -38px;
+	right: -30px;
+}
+
+.about__media-wrap {
+	position: relative;
+	width: 494px;
+}
+
+.about__media-wrap::after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	inset: auto 0 0 0;
+	height: 336px;
+	border-radius: 16px;
+	background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+	box-shadow: 11px 18px 65px 0px rgba(255, 155, 121, 0.12);
+	z-index: -1;
+}
+
+.about__img {
+	width: 450px;
+	display: block;
+	margin: 0 auto;
+}
+
+.about__decor {
+	position: absolute;
+	top: 157px;
+	right: -50px;
+	z-index: -1;
 }
