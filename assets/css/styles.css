@@ -37,6 +37,8 @@ button {
 	font-family: inherit;
 }
 
+/* === COMMON === */
+
 .container {
 	width: 1170px;
 	max-width: calc(100% - 48px);
@@ -84,6 +86,28 @@ button {
 	height: 20px;
 	background: #fff;
 	border-radius: 50%;
+}
+
+.section-label {
+	color: #5e6085;
+	font-family: Sora, sans-serif;
+	font-size: 1.6rem;
+	font-weight: 600;
+	line-height: 1;
+}
+
+.section-heading {
+	color: #000958;
+	font-size: 5.2rem;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.section-desc {
+	color: #656689;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1.87;
 }
 
 /* === HEADER === */
@@ -276,4 +300,64 @@ button {
 	font-weight: 500;
 	line-height: 1;
 	text-decoration: underline;
+}
+
+/* === ABOUT === */
+.about {
+	margin-top: 77px;
+	padding: 130px 0;
+}
+
+.about__inner {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.about__heading,
+.about__desc {
+	width: 444px;
+}
+
+.about__heading {
+	margin-top: 15px;
+}
+
+.about__desc {
+	margin-top: 24px;
+}
+
+.about__checklist {
+	margin-top: 54px;
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 40px 63px;
+	justify-content: flex-start;
+}
+
+.about__checklist-item {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 0 10px;
+	color: #48496a;
+	font-size: 1.8rem;
+	font-weight: 500;
+	line-height: 1;
+	white-space: nowrap;
+}
+
+.about__checklist-item::before {
+	content: "";
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background: #ff5d31;
+	border-radius: 4px;
+}
+
+.about__checklist-item::after {
+	position: absolute;
+	top: 2px;
+	left: 5px;
+	content: url(../icons/check.svg);
 }
