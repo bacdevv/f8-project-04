@@ -1221,6 +1221,11 @@ button {
 	background: linear-gradient(to right, #fff6ed 42%, transparent 42%);
 }
 
+.footer__inner {
+	display: flex;
+	/* align-items: center; */
+}
+
 .footer__left {
 	width: 42%;
 }
@@ -1302,4 +1307,36 @@ button {
 	height: 32px;
 	border-radius: 50%;
 	background: #fff;
+}
+
+.footer__right {
+	flex: 1;
+}
+
+.footer__row {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 58px 137px;
+	padding: 52px 0 48px 130px;
+}
+
+.footer__list {
+	margin-top: 14px;
+}
+
+.footer-item__link {
+	color: #656689;
+	font-size: 1.4rem;
+	line-height: 2;
+}
+
+.footer-item__link:hover {
+	text-decoration: underline;
+}
+
+.footer__copyright {
+	color: #656689;
+	font-size: 1.2rem;
+	line-height: 1.16;
+	padding-bottom: 48px;
 }
